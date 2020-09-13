@@ -12,7 +12,7 @@ for i, fp in enumerate(args.fps):
     plt.plot(df.iloc[:, 0], (df.iloc[:, 5]/3), color='C'+str(i), label="val-"+fp[:-4])
     plt.plot(df.iloc[:, 0], (df.iloc[:, 4]), color="C"+str(i), linestyle='dashed')
     
-plt.xlim(right=140)
+plt.xlim(right=200)
 plt.ylim(top=200, bottom=0)
 plt.xlabel("epochs")
 plt.ylabel("loss")
